@@ -22,56 +22,26 @@
 
     <div id="results" class="results hidden fade-in">
 
-      <h2>Your Box Chance</h2>
+      <h2>Roll Breakdown</h2>
 
-      <div class="stat">
-        <span>Effective Level:</span>
-        <strong id="effectiveLevel"></strong>
-      </div>
+      <div id="rollTableWrapper"></div>
 
-      <div class="stat">
-        <span>Base Spawn Chance:</span>
-        <strong id="baseChance"></strong>
-      </div>
+      <h2>Totals</h2>
 
-      <div class="stat">
-        <span>Bad Luck Multiplier:</span>
-        <strong id="multiplier"></strong>
-      </div>
+      <div class="stat"><span>Total Spawn Chance:</span><strong id="totalSpawn"></strong></div>
+      <div class="stat"><span>Expected Boxes:</span><strong id="expectedBoxes"></strong></div>
 
-      <div class="stat highlight">
-        <span>Final Spawn Chance:</span>
-        <strong id="finalSpawn"></strong>
-      </div>
+      <div class="stat"><span>Chance of 0 Boxes:</span><strong id="chance0"></strong></div>
+      <div class="stat"><span>Chance of 1 Box:</span><strong id="chance1"></strong></div>
+      <div class="stat"><span>Chance of 2 Boxes:</span><strong id="chance2"></strong></div>
+      <div class="stat"><span>Chance of 3 Boxes:</span><strong id="chance3"></strong></div>
 
-      <div class="stat highlight">
-        <span>Expected Boxes (per level):</span>
-        <strong id="expectedBoxes"></strong>
-      </div>
+      <h2>Total Rarity Chance</h2>
 
-      <h3>Rarity Chances</h3>
-
-      <div class="rarities">
-        <div class="rarity green">
-          <span>Green</span>
-          <strong id="finalGreen"></strong>
-        </div>
-
-        <div class="rarity blue">
-          <span>Blue</span>
-          <strong id="finalBlue"></strong>
-        </div>
-
-        <div class="rarity purple">
-          <span>Purple</span>
-          <strong id="finalPurple"></strong>
-        </div>
-
-        <div class="rarity yellow">
-          <span>Yellow</span>
-          <strong id="finalYellow"></strong>
-        </div>
-      </div>
+      <div class="stat"><span>Green:</span><strong id="totalGreen"></strong></div>
+      <div class="stat"><span>Blue:</span><strong id="totalBlue"></strong></div>
+      <div class="stat"><span>Purple:</span><strong id="totalPurple"></strong></div>
+      <div class="stat"><span>Yellow:</span><strong id="totalYellow"></strong></div>
 
     </div>
   </div>

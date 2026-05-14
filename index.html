@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Repo Cosmetic Box Chance Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Repo Cosmetic Box Chance Calculator</h1>
+      <p>Enter your level and how many levels you've gone without a box.</p>
+    </header>
+
+    <section class="inputs">
+      <div class="field">
+        <label for="levelInput">Current Level</label>
+        <input type="number" id="levelInput" min="1" value="1" />
+      </div>
+
+      <div class="field">
+        <label for="streakInput">Levels Since Last Box</label>
+        <input type="number" id="streakInput" min="0" value="0" />
+      </div>
+
+      <button id="calcButton">Calculate</button>
+    </section>
+
+    <section id="results" class="results hidden">
+      <h2>Results</h2>
+
+      <div class="result-row">
+        <span class="label">Effective Level:</span>
+        <span id="effectiveLevel"></span>
+      </div>
+
+      <div class="result-row">
+        <span class="label">Base Spawn Chance:</span>
+        <span id="baseChance"></span>
+      </div>
+
+      <div class="result-row">
+        <span class="label">Bad Luck Multiplier:</span>
+        <span id="multiplier"></span>
+      </div>
+
+      <div class="result-row">
+        <span class="label">Final Spawn Chance:</span>
+        <span id="finalSpawn"></span>
+      </div>
+
+      <h3>Rarity Breakdown</h3>
+      <div class="rarity-grid">
+        <div class="rarity-card green">
+          <div class="rarity-label">Green</div>
+          <div class="rarity-base">Base: <span id="baseGreen"></span></div>
+          <div class="rarity-final">Final: <span id="finalGreen"></span></div>
+        </div>
+
+        <div class="rarity-card blue">
+          <div class="rarity-label">Blue</div>
+          <div class="rarity-base">Base: <span id="baseBlue"></span></div>
+          <div class="rarity-final">Final: <span id="finalBlue"></span></div>
+        </div>
+
+        <div class="rarity-card purple">
+          <div class="rarity-label">Purple</div>
+          <div class="rarity-base">Base: <span id="basePurple"></span></div>
+          <div class="rarity-final">Final: <span id="finalPurple"></span></div>
+        </div>
+
+        <div class="rarity-card yellow">
+          <div class="rarity-label">Yellow</div>
+          <div class="rarity-base">Base: <span id="baseYellow"></span></div>
+          <div class="rarity-final">Final: <span id="finalYellow"></span></div>
+        </div>
+      </div>
+
+      <p class="note">
+        Levels above 16 use the Level 16+ spawn and rarity values. Bad luck adds +20% to all chances per level without a box and resets after extracting a box.
+      </p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -98,3 +98,39 @@ th {
 .hidden {
   display: none;
 }
+
+/* Fade out + fade in for results refresh */
+.fade-refresh {
+  animation: fadeRefresh 0.35s ease;
+}
+
+@keyframes fadeRefresh {
+  0% { opacity: 0; transform: translateY(6px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Table reveal animation */
+.table-appear {
+  animation: tableAppear 0.4s ease;
+}
+
+@keyframes tableAppear {
+  0% { opacity: 0; transform: scale(0.97); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+/* Totals section pop-in */
+.pop-in {
+  animation: popIn 0.35s ease;
+}
+
+@keyframes popIn {
+  0% { opacity: 0; transform: scale(0.96); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+/* Button press micro-animation */
+button:active {
+  transform: scale(0.97);
+  filter: brightness(0.9);
+}
